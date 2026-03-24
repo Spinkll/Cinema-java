@@ -1,6 +1,6 @@
 import type { Movie, Hall, Session, Ticket } from "./data"
 
-const API_BASE = "/api"
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://cinema-java-production.up.railway.app/api"
 
 export const api = {
   movies: {
